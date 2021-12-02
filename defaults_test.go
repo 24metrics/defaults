@@ -29,98 +29,98 @@ type (
 )
 
 type Sample struct {
-	Int       int           `default:"1"`
-	Int8      int8          `default:"8"`
-	Int16     int16         `default:"16"`
-	Int32     int32         `default:"32"`
-	Int64     int64         `default:"64"`
-	Uint      uint          `default:"1"`
-	Uint8     uint8         `default:"8"`
-	Uint16    uint16        `default:"16"`
-	Uint32    uint32        `default:"32"`
-	Uint64    uint64        `default:"64"`
-	Uintptr   uintptr       `default:"1"`
-	Float32   float32       `default:"1.32"`
-	Float64   float64       `default:"1.64"`
-	BoolTrue  bool          `default:"true"`
-	BoolFalse bool          `default:"false"`
-	String    string        `default:"hello"`
-	Duration  time.Duration `default:"10s"`
+	Int       int           `field_default:"1"`
+	Int8      int8          `field_default:"8"`
+	Int16     int16         `field_default:"16"`
+	Int32     int32         `field_default:"32"`
+	Int64     int64         `field_default:"64"`
+	Uint      uint          `field_default:"1"`
+	Uint8     uint8         `field_default:"8"`
+	Uint16    uint16        `field_default:"16"`
+	Uint32    uint32        `field_default:"32"`
+	Uint64    uint64        `field_default:"64"`
+	Uintptr   uintptr       `field_default:"1"`
+	Float32   float32       `field_default:"1.32"`
+	Float64   float64       `field_default:"1.64"`
+	BoolTrue  bool          `field_default:"true"`
+	BoolFalse bool          `field_default:"false"`
+	String    string        `field_default:"hello"`
+	Duration  time.Duration `field_default:"10s"`
 
-	IntOct    int    `default:"0o1"`
-	Int8Oct   int8   `default:"0o10"`
-	Int16Oct  int16  `default:"0o20"`
-	Int32Oct  int32  `default:"0o40"`
-	Int64Oct  int64  `default:"0o100"`
-	UintOct   uint   `default:"0o1"`
-	Uint8Oct  uint8  `default:"0o10"`
-	Uint16Oct uint16 `default:"0o20"`
-	Uint32Oct uint32 `default:"0o40"`
-	Uint64Oct uint64 `default:"0o100"`
+	IntOct    int    `field_default:"0o1"`
+	Int8Oct   int8   `field_default:"0o10"`
+	Int16Oct  int16  `field_default:"0o20"`
+	Int32Oct  int32  `field_default:"0o40"`
+	Int64Oct  int64  `field_default:"0o100"`
+	UintOct   uint   `field_default:"0o1"`
+	Uint8Oct  uint8  `field_default:"0o10"`
+	Uint16Oct uint16 `field_default:"0o20"`
+	Uint32Oct uint32 `field_default:"0o40"`
+	Uint64Oct uint64 `field_default:"0o100"`
 
-	IntHex    int    `default:"0x1"`
-	Int8Hex   int8   `default:"0x8"`
-	Int16Hex  int16  `default:"0x10"`
-	Int32Hex  int32  `default:"0x20"`
-	Int64Hex  int64  `default:"0x40"`
-	UintHex   uint   `default:"0x1"`
-	Uint8Hex  uint8  `default:"0x8"`
-	Uint16Hex uint16 `default:"0x10"`
-	Uint32Hex uint32 `default:"0x20"`
-	Uint64Hex uint64 `default:"0x40"`
+	IntHex    int    `field_default:"0x1"`
+	Int8Hex   int8   `field_default:"0x8"`
+	Int16Hex  int16  `field_default:"0x10"`
+	Int32Hex  int32  `field_default:"0x20"`
+	Int64Hex  int64  `field_default:"0x40"`
+	UintHex   uint   `field_default:"0x1"`
+	Uint8Hex  uint8  `field_default:"0x8"`
+	Uint16Hex uint16 `field_default:"0x10"`
+	Uint32Hex uint32 `field_default:"0x20"`
+	Uint64Hex uint64 `field_default:"0x40"`
 
-	IntBin    int    `default:"0b1"`
-	Int8Bin   int8   `default:"0b1000"`
-	Int16Bin  int16  `default:"0b10000"`
-	Int32Bin  int32  `default:"0b100000"`
-	Int64Bin  int64  `default:"0b1000000"`
-	UintBin   uint   `default:"0b1"`
-	Uint8Bin  uint8  `default:"0b1000"`
-	Uint16Bin uint16 `default:"0b10000"`
-	Uint32Bin uint32 `default:"0b100000"`
-	Uint64Bin uint64 `default:"0b1000000"`
+	IntBin    int    `field_default:"0b1"`
+	Int8Bin   int8   `field_default:"0b1000"`
+	Int16Bin  int16  `field_default:"0b10000"`
+	Int32Bin  int32  `field_default:"0b100000"`
+	Int64Bin  int64  `field_default:"0b1000000"`
+	UintBin   uint   `field_default:"0b1"`
+	Uint8Bin  uint8  `field_default:"0b1000"`
+	Uint16Bin uint16 `field_default:"0b10000"`
+	Uint32Bin uint32 `field_default:"0b100000"`
+	Uint64Bin uint64 `field_default:"0b1000000"`
 
-	Struct Struct         `default:"{}"`
-	Map    map[string]int `default:"{}"`
-	Slice  []string       `default:"[]"`
+	Struct Struct         `field_default:"{}"`
+	Map    map[string]int `field_default:"{}"`
+	Slice  []string       `field_default:"[]"`
 
-	IntPtr     *int            `default:"1"`
-	UintPtr    *uint           `default:"1"`
-	Float32Ptr *float32        `default:"1"`
-	BoolPtr    *bool           `default:"true"`
-	StringPtr  *string         `default:"hello"`
-	StructPtr  *Struct         `default:"{}"`
-	MapPtr     *map[string]int `default:"{}"`
-	SlicePtr   *[]string       `default:"[]"`
+	IntPtr     *int            `field_default:"1"`
+	UintPtr    *uint           `field_default:"1"`
+	Float32Ptr *float32        `field_default:"1"`
+	BoolPtr    *bool           `field_default:"true"`
+	StringPtr  *string         `field_default:"hello"`
+	StructPtr  *Struct         `field_default:"{}"`
+	MapPtr     *map[string]int `field_default:"{}"`
+	SlicePtr   *[]string       `field_default:"[]"`
 
-	MyInt       MyInt     `default:"1"`
-	MyInt8      MyInt8    `default:"8"`
-	MyInt16     MyInt16   `default:"16"`
-	MyInt32     MyInt32   `default:"32"`
-	MyInt64     MyInt64   `default:"64"`
-	MyUint      MyUint    `default:"1"`
-	MyUint8     MyUint8   `default:"8"`
-	MyUint16    MyUint16  `default:"16"`
-	MyUint32    MyUint32  `default:"32"`
-	MyUint64    MyUint64  `default:"64"`
-	MyUintptr   MyUintptr `default:"1"`
-	MyFloat32   MyFloat32 `default:"1.32"`
-	MyFloat64   MyFloat64 `default:"1.64"`
-	MyBoolTrue  MyBool    `default:"true"`
-	MyBoolFalse MyBool    `default:"false"`
-	MyString    MyString  `default:"hello"`
-	MyMap       MyMap     `default:"{}"`
-	MySlice     MySlice   `default:"[]"`
+	MyInt       MyInt     `field_default:"1"`
+	MyInt8      MyInt8    `field_default:"8"`
+	MyInt16     MyInt16   `field_default:"16"`
+	MyInt32     MyInt32   `field_default:"32"`
+	MyInt64     MyInt64   `field_default:"64"`
+	MyUint      MyUint    `field_default:"1"`
+	MyUint8     MyUint8   `field_default:"8"`
+	MyUint16    MyUint16  `field_default:"16"`
+	MyUint32    MyUint32  `field_default:"32"`
+	MyUint64    MyUint64  `field_default:"64"`
+	MyUintptr   MyUintptr `field_default:"1"`
+	MyFloat32   MyFloat32 `field_default:"1.32"`
+	MyFloat64   MyFloat64 `field_default:"1.64"`
+	MyBoolTrue  MyBool    `field_default:"true"`
+	MyBoolFalse MyBool    `field_default:"false"`
+	MyString    MyString  `field_default:"hello"`
+	MyMap       MyMap     `field_default:"{}"`
+	MySlice     MySlice   `field_default:"[]"`
 
-	StructWithJSON    Struct         `default:"{\"Foo\": 123}"`
-	StructPtrWithJSON *Struct        `default:"{\"Foo\": 123}"`
-	MapWithJSON       map[string]int `default:"{\"foo\": 123}"`
-	SliceWithJSON     []string       `default:"[\"foo\"]"`
+	StructWithJSON    Struct         `field_default:"{\"Foo\": 123}"`
+	StructPtrWithJSON *Struct        `field_default:"{\"Foo\": 123}"`
+	MapWithJSON       map[string]int `field_default:"{\"foo\": 123}"`
+	SliceWithJSON     []string       `field_default:"[\"foo\"]"`
 
-	Empty string `default:""`
+	Empty string `field_default:""`
 
-	NoDefault       *string `default:"-"`
-	NoDefaultStruct Struct  `default:"-"`
+	NoDefault       *string `field_default:"-"`
+	NoDefaultStruct Struct  `field_default:"-"`
 
 	MapWithNoTag               map[string]int
 	SliceWithNoTag             []string
@@ -128,18 +128,18 @@ type Sample struct {
 	StructWithNoTag            Struct
 	DeepSliceOfStructWithNoTag [][][]Struct
 
-	NonInitialString    string  `default:"foo"`
-	NonInitialSlice     []int   `default:"[123]"`
-	NonInitialStruct    Struct  `default:"{}"`
-	NonInitialStructPtr *Struct `default:"{}"`
+	NonInitialString    string  `field_default:"foo"`
+	NonInitialSlice     []int   `field_default:"[123]"`
+	NonInitialStruct    Struct  `field_default:"{}"`
+	NonInitialStructPtr *Struct `field_default:"{}"`
 }
 
 type Struct struct {
-	Embedded `default:"{}"`
+	Embedded `field_default:"{}"`
 
 	Foo         int
 	Bar         int
-	WithDefault string `default:"foo"`
+	WithDefault string `field_default:"foo"`
 }
 
 func (s *Struct) SetDefaults() {
@@ -147,7 +147,7 @@ func (s *Struct) SetDefaults() {
 }
 
 type Embedded struct {
-	Int int `default:"1"`
+	Int int `field_default:"1"`
 }
 
 func TestMustSet(t *testing.T) {
@@ -489,13 +489,13 @@ func TestInit(t *testing.T) {
 
 		t.Run("invalid json", func(t *testing.T) {
 			if err := Set(&struct {
-				I []int `default:"[!]"`
+				I []int `field_default:"[!]"`
 			}{}); err == nil {
 				t.Errorf("it should return error")
 			}
 
 			if err := Set(&struct {
-				I map[string]int `default:"{1}"`
+				I map[string]int `field_default:"{1}"`
 			}{}); err == nil {
 				t.Errorf("it should return error")
 			}
@@ -503,14 +503,14 @@ func TestInit(t *testing.T) {
 			if err := Set(&struct {
 				S struct {
 					I []int
-				} `default:"{!}"`
+				} `field_default:"{!}"`
 			}{}); err == nil {
 				t.Errorf("it should return error")
 			}
 
 			if err := Set(&struct {
 				S struct {
-					I []int `default:"[!]"`
+					I []int `field_default:"[!]"`
 				}
 			}{}); err == nil {
 				t.Errorf("it should return error")
@@ -598,8 +598,8 @@ func TestCanUpdate(t *testing.T) {
 }
 
 type Child struct {
-	Name string `default:"Tom"`
-	Age  int    `default:"20"`
+	Name string `field_default:"Tom"`
+	Age  int    `field_default:"20"`
 }
 
 type Parent struct {
@@ -615,12 +615,12 @@ func TestPointerStructMember(t *testing.T) {
 }
 
 type Main struct {
-	MainInt int `default:"-"`
-	*Other  `default:"{}"`
+	MainInt int `field_default:"-"`
+	*Other  `field_default:"{}"`
 }
 
 type Other struct {
-	OtherInt int `default:"-"`
+	OtherInt int `field_default:"-"`
 }
 
 func (s *Main) SetDefaults() {
